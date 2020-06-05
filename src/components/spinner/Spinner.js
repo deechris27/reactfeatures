@@ -15,12 +15,11 @@ const rotate = keyframes`
 
 export default class Spinner extends Component {
 
-    constructor({ spin }) {
-        super(spin);
-        this.state = {
-            isSpin: spin
+
+        state = {
+            isSpin: this.props.spin
         }
-    }
+    
 
     static propTypes = {
         spin: PropTypes.bool
